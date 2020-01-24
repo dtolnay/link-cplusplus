@@ -6,4 +6,9 @@ rust:
   - stable
   - 1.31.0
 
+os:
+  - linux
+  - macos
+  - windows
+
 script: cargo test
