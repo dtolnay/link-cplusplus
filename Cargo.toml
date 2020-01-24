@@ -1,6 +1,6 @@
 [package]
 name = "link-cplusplus"
-version = "0.0.0"
+version = "1.0.0"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "Link libstdc++ or libc++ automatically or manually"

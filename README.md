@@ -27,18 +27,18 @@ linked, whichever is the platform's default, should use:
 
 ```toml
 [dependencies]
-link-cplusplus = "0.0"
+link-cplusplus = "1.0"
 ```
 
 An application that wants a particular one or the other linked should use:
 
 ```toml
 [dependencies]
-link-cplusplus = { version = "0.0", features = ["libstdcxx"] }
+link-cplusplus = { version = "1.0", features = ["libstdcxx"] }
 
 # or
 
-link-cplusplus = { version = "0.0", features = ["libcxx"] }
+link-cplusplus = { version = "1.0", features = ["libcxx"] }
 ```
 
 An application that wants to handle its own more complicated logic for link
@@ -46,7 +46,7 @@ flags from its build script can make this crate do nothing by using:
 
 ```toml
 [dependencies]
-link-cplusplus = { version = "0.0", features = ["nothing"] }
+link-cplusplus = { version = "1.0", features = ["nothing"] }
 ```
 
 <br>
