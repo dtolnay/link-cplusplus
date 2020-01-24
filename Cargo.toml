@@ -3,6 +3,11 @@ name = "link-cplusplus"
 version = "0.0.0"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 edition = "2018"
+license = "MIT OR Apache-2.0"
+description = "Link libstdc++ or libc++ automatically or manually"
+repository = "https://github.com/dtolnay/link-cplusplus"
+documentation = "https://docs.rs/link-cplusplus"
+readme = "README.md"
 
 [build-dependencies]
 cc = "1.0"
