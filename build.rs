@@ -1,3 +1,7 @@
+use std::env;
+use std::fs;
+use std::path::PathBuf;
+
 fn main() {
     let libstdcxx = cfg!(feature = "libstdcxx");
     let libcxx = cfg!(feature = "libcxx");
@@ -19,7 +23,10 @@ fn main() {
         (false, true) => println!("cargo:rustc-link-lib=c++"),
         (false, false) | (true, true) => {
             // The platform's default.
-            cc::Build::new().cpp(true).compile("link-cplusplus");
+            let out_dir = env::var_os("OUT_DIR").expect("missing OUT_DIR");
+            let path = PathBuf::from(out_dir).join("dummy.cc");
+            fs::write(&path, "int rust_link_cplusplus;\n").unwrap();
+            cc::Build::new().cpp(true).file(&path).compile("link-cplusplus");
         }
     }
 }
