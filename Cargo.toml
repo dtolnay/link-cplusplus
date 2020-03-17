@@ -17,3 +17,6 @@ default = [] # automatic
 libstdcxx = [] # force libstdc++
 libcxx = [] # force libc++
 nothing = [] # link nothing, determined somewhere else
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
