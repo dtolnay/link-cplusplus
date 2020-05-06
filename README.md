@@ -1,7 +1,7 @@
 `-lstdc++` or `-lc++`
 =====================
 
-[![Build Status](https://api.travis-ci.com/dtolnay/link-cplusplus.svg?branch=master)](https://travis-ci.com/dtolnay/link-cplusplus)
+[![Build Status](https://img.shields.io/github/workflow/status/dtolnay/link-cplusplus/CI/master)](https://github.com/dtolnay/link-cplusplus/actions?query=branch%3Amaster)
 [![Latest Version](https://img.shields.io/crates/v/link-cplusplus.svg)](https://crates.io/crates/link-cplusplus)
 [![Rust Documentation](https://img.shields.io/badge/api-rustdoc-blue.svg)](https://docs.rs/link-cplusplus)
 
