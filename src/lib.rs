@@ -37,11 +37,11 @@
 //!
 //! ```toml
 //! [dependencies]
-//! link-cplusplus = { version = "1.0", features = ["libstdcxx"] }
+//! link-cplusplus = { version = "1.0", features = ["libstdc++"] }
 //!
 //! # or
 //!
-//! link-cplusplus = { version = "1.0", features = ["libcxx"] }
+//! link-cplusplus = { version = "1.0", features = ["libc++"] }
 //! ```
 //!
 //! An application that wants to handle its own more complicated logic for link

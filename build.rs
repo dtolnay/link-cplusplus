@@ -3,8 +3,8 @@ use std::fs;
 use std::path::PathBuf;
 
 fn main() {
-    let libstdcxx = cfg!(feature = "libstdcxx");
-    let libcxx = cfg!(feature = "libcxx");
+    let libstdcxx = cfg!(feature = "libstdc++");
+    let libcxx = cfg!(feature = "libc++");
     let nothing = cfg!(feature = "nothing");
 
     if nothing {
