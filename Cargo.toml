@@ -2,6 +2,7 @@
 name = "link-cplusplus"
 version = "1.0.3"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
+links = "cplusplus"
 edition = "2018"
 license = "MIT OR Apache-2.0"
 description = "Link libstdc++ or libc++ automatically or manually"
