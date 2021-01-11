@@ -26,7 +26,8 @@
 //! # Options
 //!
 //! An application or library that is fine with either of libstdc++ or libc++
-//! being linked, whichever is the platform's default, should use:
+//! being linked, whichever is the platform's default, should use the following
+//! in Cargo.toml:
 //!
 //! ```toml
 //! [dependencies]
@@ -50,4 +51,14 @@
 //! ```toml
 //! [dependencies]
 //! link-cplusplus = { version = "1.0", features = ["nothing"] }
+//! ```
+//!
+//! Lastly, make sure to add an explicit `extern crate` dependency to your crate
+//! root, since the link-cplusplus crate will be otherwise unused and its link
+//! flags dropped.
+//!
+//! ```
+//! // src/lib.rs
+//!
+//! extern crate link_cplusplus;
 //! ```
