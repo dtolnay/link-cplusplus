@@ -1,6 +1,6 @@
 [package]
 name = "link-cplusplus"
-version = "1.0.4"
+version = "1.0.5"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 links = "cplusplus"
 edition = "2018"
