@@ -62,3 +62,5 @@
 //!
 //! extern crate link_cplusplus;
 //! ```
+
+#![no_std]
