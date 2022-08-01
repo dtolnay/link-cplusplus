@@ -2,14 +2,14 @@
 name = "link-cplusplus"
 version = "1.0.6"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
-links = "cplusplus"
-edition = "2018"
-rust-version = "1.34"
-license = "MIT OR Apache-2.0"
 description = "Link libstdc++ or libc++ automatically or manually"
-repository = "https://github.com/dtolnay/link-cplusplus"
 documentation = "https://docs.rs/link-cplusplus"
+edition = "2018"
+license = "MIT OR Apache-2.0"
+links = "cplusplus"
 readme = "README.md"
+repository = "https://github.com/dtolnay/link-cplusplus"
+rust-version = "1.34"
 
 [build-dependencies]
 cc = "1.0"
