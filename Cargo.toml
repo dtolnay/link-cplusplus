@@ -6,6 +6,7 @@ categories = ["external-ffi-bindings", "development-tools::ffi", "compilers", "n
 description = "Link libstdc++ or libc++ automatically or manually"
 documentation = "https://docs.rs/link-cplusplus"
 edition = "2018"
+keywords = ["linkage", "c++"]
 license = "MIT OR Apache-2.0"
 links = "cplusplus"
 readme = "README.md"
