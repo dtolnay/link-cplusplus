@@ -9,7 +9,6 @@ edition = "2018"
 keywords = ["linkage", "c++"]
 license = "MIT OR Apache-2.0"
 links = "cplusplus"
-readme = "README.md"
 repository = "https://github.com/dtolnay/link-cplusplus"
 rust-version = "1.34"
 
