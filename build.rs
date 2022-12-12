@@ -3,6 +3,8 @@ use std::fs;
 use std::path::PathBuf;
 
 fn main() {
+    println!("cargo:rerun-if-changed=build.rs");
+
     let libstdcxx = cfg!(feature = "libstdc++");
     let libcxx = cfg!(feature = "libc++");
     let nothing = cfg!(feature = "nothing");
