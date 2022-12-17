@@ -1,6 +1,6 @@
 [package]
 name = "link-cplusplus"
-version = "1.0.7"
+version = "1.0.8"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 categories = ["external-ffi-bindings", "development-tools::ffi", "compilers", "no-std"]
 description = "Link libstdc++ or libc++ automatically or manually"
