@@ -2,7 +2,7 @@
 name = "link-cplusplus"
 version = "1.0.8"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
-categories = ["external-ffi-bindings", "development-tools::ffi", "compilers", "no-std"]
+categories = ["external-ffi-bindings", "development-tools::ffi", "compilers", "no-std", "no-std::no-alloc"]
 description = "Link libstdc++ or libc++ automatically or manually"
 documentation = "https://docs.rs/link-cplusplus"
 edition = "2018"
