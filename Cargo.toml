@@ -10,7 +10,7 @@ keywords = ["linkage", "c++"]
 license = "MIT OR Apache-2.0"
 links = "cplusplus"
 repository = "https://github.com/dtolnay/link-cplusplus"
-rust-version = "1.34"
+rust-version = "1.45"
 
 [build-dependencies]
 cc = "1.0"
