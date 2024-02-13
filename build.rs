@@ -28,7 +28,10 @@ fn main() {
             let out_dir = env::var_os("OUT_DIR").expect("missing OUT_DIR");
             let path = PathBuf::from(out_dir).join("dummy.cc");
             fs::write(&path, "int rust_link_cplusplus;\n").unwrap();
-            cc::Build::new().cpp(true).file(&path).compile("link-cplusplus");
+            cc::Build::new()
+                .cpp(true)
+                .file(&path)
+                .compile("link-cplusplus");
         }
     }
 }
