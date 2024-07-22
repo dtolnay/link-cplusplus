@@ -15,14 +15,14 @@ fn main() {
 
     if libstdcxx && libcxx {
         println!(
-            "cargo:warning=-lstdc++ and -lc++ are both requested, \
+            "cargo::warning=-lstdc++ and -lc++ are both requested, \
              using the platform's default"
         );
     }
 
     match (libstdcxx, libcxx) {
-        (true, false) => println!("cargo:rustc-link-lib=stdc++"),
-        (false, true) => println!("cargo:rustc-link-lib=c++"),
+        (true, false) => println!("cargo::rustc-link-lib=stdc++"),
+        (false, true) => println!("cargo::rustc-link-lib=c++"),
         (false, false) | (true, true) => {
             // The platform's default.
             let out_dir = env::var_os("OUT_DIR").expect("missing OUT_DIR");
