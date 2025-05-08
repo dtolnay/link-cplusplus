@@ -2,7 +2,6 @@ use std::env;
 use std::fs;
 use std::path::PathBuf;
 
-#[cfg(target_os = "linux")]
 fn linux_libcxx() -> bool {
     let common_library_paths = vec![
         PathBuf::from("/lib"),
