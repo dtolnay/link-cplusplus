@@ -13,7 +13,7 @@ repository = "https://github.com/dtolnay/link-cplusplus"
 rust-version = "1.68"
 
 [build-dependencies]
-cc = "1.0"
+cc = "1"
 
 [features]
 default = [] # automatic
